@@ -14,6 +14,7 @@ if __name__ == "__main__":
     cursor = conn.cursor()
     cursor.execute("SHOW TABLES")
     print(cursor.fetchall())
+    print("fetched all tables succesfully")
     cursor.close()
     conn.close()
 
